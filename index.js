@@ -189,3 +189,16 @@ generate.addEventListener("click", function(){
     calcStrength();
 
 })
+
+
+slider.addEventListener("mousedown", function(){
+    slider.classList.add("border-y");
+})
+
+document.addEventListener("mousedown", function(event) {
+    // Check if the click was outside the element
+    if (event.target!=slider) {
+        // Remove the event listener from the element
+        slider.classList.remove("border-y");
+    }
+});
