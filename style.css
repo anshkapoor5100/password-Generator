@@ -15,6 +15,7 @@
     background-image: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
     overflow-y: hidden;
     overflow-x: hidden;
+    position: relative;
 }
 
 .content{
@@ -49,7 +50,7 @@
     letter-spacing: 1px;
     user-select: none;
     overflow-y: auto;
-    width: 80%;
+    width: 85%;
 }
 
 .pass-container{
@@ -168,7 +169,7 @@
     cursor: pointer;
     height: 15px;
     position: relative;
-    z-index: 0;
+    z-index: 10;
 
 }
 .slider::before {
@@ -192,6 +193,7 @@
     border: 2px solid hsl(52, 100%, 62%);
     border-radius: 100%;
     box-shadow: hsl(52, 100%, 62%) 0px 0px 5px 0px;
+    z-index: 10;
   }
 
   .slider::-webkit-slider-thumb:hover {
@@ -203,7 +205,11 @@
 
 @media(max-width:600px){
     .content{
-        transform: scale(0.85);
-        margin-top:-30px;
+        transform: scale(0.87);
+        margin-top: -30px;
     }
+}
+
+.border-y{
+    border: 3px solid hsl(52, 100%, 62%);
 }
