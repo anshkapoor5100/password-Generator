@@ -48,6 +48,8 @@
     line-height: 30px;
     letter-spacing: 1px;
     user-select: none;
+    overflow-y: auto;
+    width: 85%;
 }
 
 .pass-container{
