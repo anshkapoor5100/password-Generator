@@ -203,6 +203,7 @@
 
 @media(max-width:600px){
     .content{
-        transform: scale(0.85);
+        transform: scale(0.75);
+        margin-top:-10px;
     }
 }
